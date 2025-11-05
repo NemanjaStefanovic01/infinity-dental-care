@@ -1,0 +1,44 @@
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* ispod navbara i sadržaja */
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(145, 145, 145);
+  opacity: 0.7; /* 80% providno */
+}
+
+.home-content {
+  position: relative;
+  text-align: center;
+  top: 35vh;
+
+  color: whitesmoke;
+
+  user-select: none;
+}
+.home-content h1{
+  font-size: 4.5rem;
+  font-weight: 400;
+
+  margin-bottom: var(--space-lg);
+}
+.home-content h3{
+  
+}
