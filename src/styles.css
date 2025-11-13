@@ -43,6 +43,9 @@ button, li, a {
   cursor: pointer;
 }
 
+.global-padding{
+  padding: 0px var(--space-3xl);
+}
 
 /* GLOBAL STYLE VARIABLES */
 :root{

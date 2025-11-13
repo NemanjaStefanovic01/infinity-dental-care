@@ -3,7 +3,7 @@ button{
     text-transform: uppercase;
 
     padding: var(--space-sm) var(--space-md);
-    border-radius: .5rem;
+    border-radius: 1rem;
     border: 2px solid var(--color-brand-dark-purple);
     background-color: var(--color-brand-dark-purple);
     color: var(--color-bg);

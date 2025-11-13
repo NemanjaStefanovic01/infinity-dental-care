@@ -1,11 +1,19 @@
+/* ✅ Ova sekcija zauzima pun ekran */
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* pun viewport */
+  overflow: hidden;
+}
+
+/* Video i overlay */
 .video-background {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  z-index: -1; /* ispod navbara i sadržaja */
+  z-index: -1; /* da bude iza sadržaja */
 }
 
 .video-background video {
@@ -21,24 +29,42 @@
   width: 100%;
   height: 100%;
   background: rgb(145, 145, 145);
-  opacity: 0.7; /* 80% providno */
+  opacity: 0.7;
 }
 
-.home-content {
+/* ✅ Landing content centriran unutar video sekcije */
+.landing-content {
   position: relative;
-  text-align: center;
-  top: 35vh;
-
+  z-index: 1;
   color: whitesmoke;
+  text-align: center;
+
+  /* centriraj vertikalno i horizontalno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
 
   user-select: none;
 }
-.home-content h1{
-  font-size: 4.5rem;
-  font-weight: 400;
 
-  margin-bottom: var(--space-lg);
+.landing-content h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
-.home-content h3{
-  
+
+.landing-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ✅ About sekcija počinje normalno ispod video-sekcije */
+.about-section {
+  position: relative;
+  padding: var(--space-lg) 0px;
+  background: var(--color-bg, #fff);
+  color: var(--color-text, #222);
 }

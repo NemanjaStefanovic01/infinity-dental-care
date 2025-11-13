@@ -1,11 +1,20 @@
-<div class="video-background">
-  <video autoplay muted loop playsinline>
-    <source src="../../../assets/ordinacija01.mp4" type="video/mp4">
-  </video>
-  <div class="overlay"></div>
+<div class="video-section">
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="../../../assets/ordinacija01.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="landing-content">
+    <h1>Infinity Dental Care</h1>
+    <h3>Vaš osmeh je naša misija</h3>
+    <btn-primary [text]="'Pozovite nas'" (clicked)="btnCtaClicked()"></btn-primary>
+  </div>
 </div>
 
-<div class="home-content">
-  <h1>Infinity Dental Care</h1>
-  <h3>Vaš osmeh je naša misija</h3>
-</div>
+<global-padding>
+  <section class="about-section">
+    <app-about></app-about>
+  </section>
+</global-padding>
