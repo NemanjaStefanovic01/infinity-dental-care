@@ -9,12 +9,17 @@
 
     padding: 0px var(--space-lg);
 
-    color: whitesmoke;
+    color: var(--color-bg);
     text-transform: uppercase;
 
     transition: all 0.3s cubic-bezier(0.25, 1.25, 0.5, 1);
 
     user-select: none;
+}
+
+.nav_bar-ul a {
+    color: inherit;           /* nasledi boju iz li ili roditelja */
+    text-decoration: none;    /* ukloni underline */
 }
 
 .nav_bar-container:hover{
@@ -75,4 +80,76 @@
   /* background: rgba(255, 255, 255, 0.1);  
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px); */
+}
+
+/* ------------------------------- */
+/* HAMBURGER DEFAULT STATE */
+/* ------------------------------- */
+#nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: var(--color-brand-dark-purple);
+  border-radius: 4px;
+
+  transition: all 0.3s cubic-bezier(0.25, 1.25, 0.5, 1);
+}
+
+/* ------------------------------- */
+/* MOBILE MODE (do 640px) */
+/* ------------------------------- */
+@media (max-width: 1024px) {
+  /* Sakrij desktop navigaciju */
+  .nav_bar-ul,
+  btn-primary {
+    display: none;
+  }
+
+  /* Prikazi hamburger */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Kada je checkbox čekiran — prikaži meni */
+  #nav-toggle:checked ~ .nav_bar-ul {
+    display: flex;
+    position: absolute;
+    top: 120px;     /* ispod nav bara */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: var(--space-lg);
+    gap: var(--space-md);
+    text-align: left;
+  }
+
+  /* Hamburger animacija */
+  #nav-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  #nav-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+
+  /* Bonus fixes */
+  a, li{
+    color: var(--color-text);
+  }
 }

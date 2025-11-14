@@ -5,11 +5,18 @@
          alt="Stomatološka ordinacija Infinity Dental Care Novi Sad">
   </a>
 
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
   <ul class="nav_bar-ul">
-    <li>Početna</li>
-    <li>O nama</li>
-    <li>Usluge</li>
-    <li>Kontakt</li>
+    <a href="/"><li>Početna</li></a>
+    <a href="/"><li>O nama</li></a>
+    <a href="/"><li>Usluge</li></a>
+    <a href="/"><li>Kontakt</li></a>
   </ul>
 
   <btn-primary [text]="'Pozovite nas'" (clicked)="btnCtaClicked()"></btn-primary>
