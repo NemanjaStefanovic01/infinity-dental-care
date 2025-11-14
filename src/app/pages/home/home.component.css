@@ -1,8 +1,7 @@
-/* ✅ Ova sekcija zauzima pun ekran */
 .video-section {
   position: relative;
   width: 100%;
-  height: 100vh; /* pun viewport */
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -13,7 +12,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* da bude iza sadržaja */
+  z-index: -1;
 }
 
 .video-background video {
@@ -32,36 +31,33 @@
   opacity: 0.7;
 }
 
-/* ✅ Landing content centriran unutar video sekcije */
 .landing-content {
   position: relative;
   z-index: 1;
   color: whitesmoke;
   text-align: center;
 
-  /* centriraj vertikalno i horizontalno */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 0 1rem;
+  padding: 0 var(--space-md);
 
   user-select: none;
 }
 
 .landing-content h1 {
-  font-size: 4rem;
+  font-size: var(--font-size-3xl);
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-md);
 }
 
 .landing-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-2xl);
 }
 
-/* ✅ About sekcija počinje normalno ispod video-sekcije */
 .about-section {
   position: relative;
   padding: var(--space-lg) 0px;
