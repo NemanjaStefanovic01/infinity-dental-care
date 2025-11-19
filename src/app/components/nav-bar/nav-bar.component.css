@@ -67,7 +67,7 @@
 
 .nav_bar-ul li:hover {
     transform: translateY(-3.5px);
-    color: var(--color-brand-dark-purple);
+    color: var(--color-brand-primary);
 }
 
 :host {
@@ -99,7 +99,7 @@
 .hamburger span {
   width: 28px;
   height: 3px;
-  background-color: var(--color-brand-dark-purple);
+  background-color: var(--color-brand-primary);
   border-radius: 4px;
 
   transition: all 0.3s cubic-bezier(0.25, 1.25, 0.5, 1);

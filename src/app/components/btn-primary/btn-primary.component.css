@@ -4,8 +4,8 @@ button{
 
     padding: var(--space-md) var(--space-lg);
     border-radius: 1rem;
-    border: 2px solid var(--color-brand-dark-purple);
-    background-color: var(--color-brand-dark-purple);
+    border: 2px solid var(--color-brand-primary);
+    background-color: var(--color-brand-primary);
     color: var(--color-bg);
 
     letter-spacing: 1px;
@@ -19,9 +19,9 @@ button{
 }
 
 button:hover{
-    border: 2px solid var(--color-brand-dark-purple);
+    border: 2px solid var(--color-brand-primary);
     background-color: transparent;
-    color: var(--color-brand-dark-purple);
+    color: var(--color-brand-primary);
 
     scale: 1.035;
 }

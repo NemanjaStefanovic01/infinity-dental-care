@@ -54,8 +54,10 @@ button, li, a {
     --color-text-light: #626262;
     --color-bg: #ffffff;
 
-    --color-brand-light-pink: rgb(237, 204, 217);
-    --color-brand-dark-purple: rgb(126, 81, 122);
+    --color-brand-primary: rgb(197, 138, 149); 
+    --color-brand-secundary: rgb(237, 204, 217);
+    /* --color-brand-dark-purple: rgb(162, 92, 104);
+    --color-brand-dark-purple: rgb(155, 63, 77); */
 
     /* Base font size */
     --font-size-xs: 0.65rem;
