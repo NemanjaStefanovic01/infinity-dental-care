@@ -59,7 +59,7 @@ button, li, a {
 
   margin-bottom: var(--space-xl);
 
-  text-align: left;
+  text-align: center;
 }
 .section-heading p{
   font-family: 'Montserrat', sans-serif;
@@ -105,9 +105,9 @@ button, li, a {
     --font-size-xs: 0.65rem;
     --font-size-sm: 0.75rem;
     --font-size-md: 1rem;
-    --font-size-lg: 1.15rem;
+    --font-size-lg: 1.1rem;
     --font-size-xl: 1.6rem;
-    --font-size-2xl: 2.25rem;
+    --font-size-2xl: 2.1rem;
     --font-size-3xl: 3rem;
 
     /* Spacing scale */
@@ -205,6 +205,7 @@ button, li, a {
 
   .section-heading{
     align-items: start;
+    text-align: left;
   }
 }
 
