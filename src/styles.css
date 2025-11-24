@@ -47,13 +47,19 @@ button, li, a {
   padding: 0px var(--space-md);
 }
 
+.content-container{
+  padding: var(--space-lg) 0px;
+}
+
 .section-heading{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  margin-bottom: var(--space-3xl);
+  margin-bottom: var(--space-xl);
+
+  text-align: left;
 }
 .section-heading p{
   font-family: 'Montserrat', sans-serif;
@@ -70,7 +76,8 @@ button, li, a {
   text-transform: uppercase;
   letter-spacing: 3px;
 
-  margin-bottom: var(--space-sm);
+  color: var(--color-brand-primary);
+  margin-bottom: var(--space-xs);
 }
 
 .img-shadow {
@@ -98,9 +105,9 @@ button, li, a {
     --font-size-xs: 0.65rem;
     --font-size-sm: 0.75rem;
     --font-size-md: 1rem;
-    --font-size-lg: 1.25rem;
+    --font-size-lg: 1.15rem;
     --font-size-xl: 1.6rem;
-    --font-size-2xl: 2rem;
+    --font-size-2xl: 2.25rem;
     --font-size-3xl: 3rem;
 
     /* Spacing scale */
@@ -120,7 +127,7 @@ button, li, a {
     --font-size-xs: 0.7rem;
     --font-size-sm: 0.8rem;
     --font-size-md: 0.95rem;
-    --font-size-lg: 1.2rem;
+    --font-size-lg: 1.15rem;
     --font-size-xl: 1.8rem;
     --font-size-2xl: 2.4rem;
     --font-size-3xl: 3.4rem;
@@ -194,6 +201,10 @@ button, li, a {
   }
   .global-padding{
     padding: 0px var(--space-2xl);
+  }
+
+  .section-heading{
+    align-items: start;
   }
 }
 

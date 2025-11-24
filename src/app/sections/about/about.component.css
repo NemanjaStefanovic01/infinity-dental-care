@@ -3,21 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-}
-
-.text-image_container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     gap: var(--space-2xl);
-}
 
-.text-container{
     text-align: center;
 }
-.text-container p{
+
+.pharagraph-container p{
     margin-bottom: var(--space-sm);
 }
 
@@ -37,11 +29,13 @@ btn-secundary{
     display: inline-block;
 }
 
-@media (min-width: 640px){
-    .text-image_container{
+@media (min-width: 1200px){
+    .content-container{
         flex-direction: row;
 
         gap: 0px;
+
+        text-align: left;
     }
 
     .text-container{
@@ -52,4 +46,10 @@ btn-secundary{
     .img-container{
         width: 40%;
     }
+
+    .img-container img{
+    height: 65vh;
+
+    border-radius: 1.5rem;
+}
 }
