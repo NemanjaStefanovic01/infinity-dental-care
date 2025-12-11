@@ -10,8 +10,6 @@ import { BtnPrimaryComponent } from '../btn-primary/btn-primary.component';
 })
 
 export class NavBarComponent {
-
-
   btnCtaClicked(){
     
   }

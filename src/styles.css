@@ -45,15 +45,19 @@ button, li, a {
 
 .global-padding{
   padding: 0px var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .content-container{
-  padding: var(--space-lg) 0px;
+  padding: var(--space-xl) 0px;
+  max-width: 1500px;
 }
 
 .img-shadow {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  border-radius: 12px;
 }
 
 .spacer-xl{
